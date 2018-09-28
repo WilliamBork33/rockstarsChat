@@ -1,0 +1,30 @@
+div#header
+
+.row#headerRow
+    img#enroute1(src="/images/enroute1.PNG")
+    h1= appTitle
+    <br>
+            
+    if user
+        a(href="/")
+            button(type="button") Home
+        a(href="/chat")
+            button(type="button") Chat
+        a(href="/profile")
+            button(type="button") Profile
+        a(href="/login")
+            button(type="button") Login
+        a(href="/logout")
+            button(type="button") Log Out
+
+        <br>
+
+        h3= "Logged In: " + user.displayName
+
+    else
+        a(href="/")
+            button(type="button") Home
+        a(href="/chat")
+            button(type="button") Chat
+        a(href="/login")
+            button(type="button") Login

@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: gray; }
+
+p {
+  color: #333333; }
+
+.row#headerRow {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: gold;
+  text-align: center; }
+
+.main.container {
+  background-image: "/images/enroute.PNG";
+  width: 50%; }
+
+#login-row {
+  align-content: center;
+  background-color: black; }
+
+.footer {
+  background-color: gold;
+  text-align: center; }
+  .footer #footer-link {
+    font-size: 20px;
+    color: white; }

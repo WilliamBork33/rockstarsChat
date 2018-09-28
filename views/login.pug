@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .main.container
+    .row
+      .col-md-6
+        h1.display-4.m-b-2 Log In
+        fieldset
+            input(name="username" id="username" type="username")
+            label(for="username") Username
+        fieldset
+            input(name="password" id="password" type="password")
+            label(for="password") Password
+        fieldset
+            a.btn.btn-spotify(a href="/auth/spotify") Spotify
+           

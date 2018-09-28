@@ -1,0 +1,47 @@
+$color-black: #333333;
+$font-family-body: "Helvetica", sans-serif;
+$color-background-gray: gray;
+$color-background-gold: gold;
+$color-background-red: red;
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: $color-background-gray;
+}
+
+p {
+  color: $color-black;
+}
+
+.row#headerRow {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: $color-background-gold;
+  text-align: center;
+}
+/////?????/////?????/////?????/////?????
+
+.main.container {
+  background-image: "/images/enroute.PNG";
+  width: 50%;
+}
+
+/////?????/////?????/////?????/////?????
+
+#login-row {
+  align-content: center;
+  background-color: black;
+}
+
+.footer {
+  background-color: $color-background-gold;
+  text-align: center;
+
+  #footer-link {
+    font-size: 20px;
+    color: white;
+  }
+}
+
+/////?????/////?????/////?????/////?????
