@@ -69,7 +69,7 @@ passport.use(
     {
       clientID: process.env.CLIENTID,
       clientSecret: process.env.CLIENTSECRET,
-      callbackURL: process.env.CLIENTSECRET
+      callbackURL: process.env.CALLBACKURL
     },
     function(accessToken, refreshToken, expires_in, profile, done) {
       console.log(profile);
