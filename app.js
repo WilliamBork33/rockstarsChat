@@ -7,30 +7,6 @@ var logger = require("morgan");
 var passport = require("passport");
 var SpotifyStrategy = require("passport-spotify").Strategy;
 
-/* // FROM SOCKET.IO
-var app = require("express")();
-var http = require("http").Server(app);
-var io = require("socket.io")(http);
-// */
-
-/*
-
-    if user
-        script.
-        var user = {
-            name: `#{user.displayName}`,
-            img: `#{user.photos}`
-            }
-
-    if !user
-            script.
-            var user = {
-                name: "No Name",
-                img: "No Image"
-                }
-   
-*/
-
 var app = express();
 
 // view engine setup
@@ -67,9 +43,9 @@ passport.deserializeUser(function(user, done) {
 passport.use(
   new SpotifyStrategy(
     {
-      clientID: process.env.CLIENTID,
-      clientSecret: process.env.CLIENTSECRET,
-      callbackURL: process.env.CALLBACKURL
+      clientID: "0cf075a23cda4b459b2acff0f8f75d2c",
+      clientSecret: "b5f495e4b76f4174bb0f280d916f6834",
+      callbackURL: "http://localhost:3000/auth/spotify/callback"
     },
     function(accessToken, refreshToken, expires_in, profile, done) {
       console.log(profile);

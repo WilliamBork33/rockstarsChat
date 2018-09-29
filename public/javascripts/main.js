@@ -128,10 +128,9 @@ var documentReady = function() {
     });
   }
 
-  if (messageSend) {
-    messageSend.addEventListener("click", function() {
-      // Send Message
-      sendMessage();
-    });
-  }
+  messageSend.addEventListener("click", function() {
+    // Send Message
+    sendMessage();
+    console.log("asdf");
+  });
 };

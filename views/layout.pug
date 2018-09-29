@@ -5,9 +5,16 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src="http://localhost:4201/livereload.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js")
-    
-    script(src="/socket/io/socket.io.js")
+    script(src="https://code.jquery.com/jquery-1.11.1.js")
+    script(src="http://localhost:4201/livereload.js")
+    script(src="/socket.io/socket.io.js")
 
+    if user
+      script.
+        var user = {
+          name: `#{user.displayName}`,
+          img: `#{user.photos}`
+        }
     script(src="/javascripts/main.js")
     block styles
     block scripts
